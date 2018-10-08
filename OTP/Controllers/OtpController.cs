@@ -6,7 +6,7 @@ namespace OTP.Controllers
 {
     public class OtpController : ApiController
     {
-        Totp _totp = new Totp(Encoding.ASCII.GetBytes("Pajoohesh"), 60, OtpHashMode.Sha512, 8);
+        Totp _totp = new Totp(Encoding.ASCII.GetBytes("masoud"), 60, OtpHashMode.Sha512, 8);
         [HttpGet]
         public string Create()
         {
