@@ -9,19 +9,19 @@ namespace OTP.Controllers
         [HttpGet]
         public string Create()
         {
-            return OtpGenerator.Create();
+            return OtpGenerator.Create(1001);
         }
 
         [HttpGet]
         public int Remaining()
         {
-            return OtpGenerator.Remaining();
+            return OtpGenerator.Remaining(1001);
         }
 
         [HttpGet]
         public bool Verify(string otp)
         {
-            return OtpGenerator.Verify(otp);
+            return OtpGenerator.Verify(otp, 1001);
         }
     }
 }
